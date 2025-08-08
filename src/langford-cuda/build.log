@@ -1,0 +1,7 @@
+nvcc  -std=c++14 -Xcompiler -Wall -arch=sm_89 -O3 -c main.cu -o main.o
+main.cu(153): error: array is not a template
+  using Positions = array<int8_t, n>;
+                    ^
+
+1 error detected in the compilation of "main.cu".
+make: *** [Makefile:52: main.o] Error 2

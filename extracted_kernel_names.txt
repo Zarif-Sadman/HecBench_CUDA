@@ -1,0 +1,2415 @@
+accuracy-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   accuracy_kernel
+ace-cuda:
+   swapGrid
+   boundaryConditionsU
+   thermalEquation
+   boundaryConditionsPhi
+   allenCahn
+   calculateForce
+adam-cuda:
+   adam
+adamw-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   fused_4bit_kernel
+addBiasQKV-cuda:
+   FP8TrtAddQKVBiasKernel
+addBiasResidualLayerNorm-cuda:
+   generalAddBiasResidualPostLayerNorm
+   addBiasResidualPostLayerNorm
+   addBiasResidualPostLayerNorm
+   addBiasResidualPostLayerNormV2
+   generalAddBiasResidualPostLayerNorm
+   addBiasResidualPostLayerNorm
+   addBiasResidualPostLayerNorm
+   addBiasResidualPostLayerNormV2
+adjacent-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   BlockAdjDiffKernel
+   BlockAdjDiffKernel
+   BlockAdjDiffKernel
+   BlockAdjDiffKernel
+   BlockAdjDiffKernel
+adv-cuda:
+   advCubatureHex3D
+aes-cuda:
+   AESDecrypt
+   AESEncrypt
+affine-cuda:
+   affine
+aidw-cuda:
+   AIDW_Kernel_Tiled
+   AIDW_Kernel
+aligned-types-cuda:
+   testKernel
+   testKernel
+   testKernel
+   testKernel
+   testKernel
+   testKernel
+   testKernel
+   testKernel
+   testKernel
+   testKernel
+   testKernel
+   testKernel
+   testKernel
+all-pairs-distance-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   k3
+   k2
+   k1
+amgmk-cuda:
+   relax
+aobench-cuda:
+   render_kernel
+aop-cuda:
+   update_cashflow_kernel
+   compute_partial_beta_kernel
+   prepare_svd_kernel
+   generate_paths_kernel
+   update_cashflow_kernel
+   compute_partial_beta_kernel
+   prepare_svd_kernel
+   generate_paths_kernel
+   compute_final_sum_kernel
+   compute_partial_sums_kernel
+   compute_final_beta_kernel
+asmooth-cuda:
+   outFilter
+   normalizeFilter
+   smoothingFilter
+assert-cuda:
+   perfKernel2
+   perfKernel
+   testKernel
+asta-cuda:
+   PTTWAC_soa_asta
+atan2-cuda:
+   compute_i
+   compute_s
+   compute_f
+atomicAggregate-cuda:
+   k
+atomicCAS-cuda:
+   atomicAddDerived
+   atomicAddDerived
+   atomicAddDerived
+   atomicMaxDerived
+   atomicMaxDerived
+   atomicMaxDerived
+   atomicMinDerived
+   atomicMinDerived
+   atomicMinDerived
+atomicCost-cuda:
+   woAtomicOnGlobalMem
+   wiAtomicOnGlobalMem
+   woAtomicOnGlobalMem
+   wiAtomicOnGlobalMem
+   woAtomicOnGlobalMem
+   wiAtomicOnGlobalMem
+atomicIntrinsics-cuda:
+   testKernel
+   testKernel
+atomicPerf-cuda:
+   SingleRangeAtomicOnSharedMem
+   WarpRangeAtomicOnSharedMem
+   BlockRangeAtomicOnSharedMem
+   SingleRangeAtomicOnGlobalMem
+   WarpRangeAtomicOnGlobalMem
+   BlockRangeAtomicOnGlobalMem
+   SingleRangeAtomicOnSharedMem
+   WarpRangeAtomicOnSharedMem
+   BlockRangeAtomicOnSharedMem
+   SingleRangeAtomicOnGlobalMem
+   WarpRangeAtomicOnGlobalMem
+   BlockRangeAtomicOnGlobalMem
+   SingleRangeAtomicOnSharedMem
+   WarpRangeAtomicOnSharedMem
+   BlockRangeAtomicOnSharedMem
+   SingleRangeAtomicOnGlobalMem
+   WarpRangeAtomicOnGlobalMem
+   BlockRangeAtomicOnGlobalMem
+atomicReduction-cuda:
+   atomic_reduction_v16
+   atomic_reduction_v8
+   atomic_reduction_v4
+   atomic_reduction_v2
+   atomic_reduction
+atomicSystemWide-cuda:
+   atomicKernel
+attention-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   kernel2_warpReduce
+   kernel2_blockReduce
+   kernel1_warpReduce
+   kernel1_blockReduce
+   kernel3
+   kernel2
+   kernel1
+attentionMultiHead-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   mha
+b+tree-cuda:
+   findK
+   findRangeK
+babelstream-cuda:
+   nstream_kernel
+   dot_kernel
+   triad_kernel
+   add_kernel
+   mul_kernel
+   copy_kernel
+   init_kernel
+   nstream_kernel
+   dot_kernel
+   triad_kernel
+   add_kernel
+   mul_kernel
+   copy_kernel
+   init_kernel
+background-subtract-cuda:
+   merge
+   updateThreshold
+   updateBackground
+   findMovingPixels
+backprop-cuda:
+   kernel_adjust_weights
+   kernel_layerforward
+bezier-surface-cuda:
+   BezierGPU
+bfs-cuda:
+   Kernel2
+   Kernel
+bh-cuda:
+   InitializationKernel
+   IntegrationKernel
+   ForceCalculationKernel
+   SortKernel
+   SummarizationKernel
+   ClearKernel2
+   TreeBuildingKernel
+   ClearKernel1
+   BoundingBoxKernel
+bicgstab-cuda:
+bilateral-cuda:
+   bilateralFilter
+   bilateralFilter
+   bilateralFilter
+bincount-cuda:
+   bincount
+   bincount
+binomial-cuda:
+   binomialOptionsKernel
+bitcracker-cuda:
+   decrypt_vmk_with_mac
+   kernel_w_block
+bitonic-sort-cuda:
+   bitonic_sort
+bitpacking-cuda:
+   bitPackKernel
+   bitPackConfigFinalizeKernel
+   bitPackConfigScanKernel
+   bitPackKernel
+   bitPackConfigFinalizeKernel
+   bitPackConfigScanKernel
+   bitPackKernel
+   bitPackConfigFinalizeKernel
+   bitPackConfigScanKernel
+   bitPackKernel
+   bitPackConfigFinalizeKernel
+   bitPackConfigScanKernel
+   bitPackKernel
+   bitPackConfigFinalizeKernel
+   bitPackConfigScanKernel
+   bitPackKernel
+   bitPackConfigFinalizeKernel
+   bitPackConfigScanKernel
+   bitPackKernel
+   bitPackConfigFinalizeKernel
+   bitPackConfigScanKernel
+   bitPackKernel
+   bitPackConfigFinalizeKernel
+   bitPackConfigScanKernel
+bitpermute-cuda:
+   bit_rev_permutation_z
+   bit_rev_permutation
+black-scholes-cuda:
+   getOutValOption
+blas-dot-cuda:
+blas-fp8gemm-cuda:
+blas-gemm-cuda:
+   matrix_mul
+   matrix_mul
+   matrix_mul
+blas-gemmBatched-cuda:
+blas-gemmEx-cuda:
+blas-gemmEx2-cuda:
+blas-gemmStridedBatched-cuda:
+blockAccess-cuda:
+   kernel
+   reference
+blockexchange-cuda:
+   k
+bmf-cuda:
+   vectorMatrixMultCompareColWarpShared
+   vectorMatrixMultCompareRowWarpShared
+   computeDistanceRowsShared
+   initFactor
+bn-cuda:
+   computeKernel
+   genScoreKernel
+bonds-cuda:
+   bonds
+boxfilter-cuda:
+   col_kernel
+   row_kernel
+bscan-cuda:
+   binary_scan
+bsearch-cuda:
+   kernel_BS4
+   kernel_BS3
+   kernel_BS2
+   kernel_BS
+bspline-vgh-cuda:
+   bspline
+bsw-cuda:
+   sequence_aa_kernel
+btree-cuda:
+   GpuBTree::kernels::search_b_tree
+   GpuBTree::kernels::insert_keys
+   GpuBTree::kernels::init_btree
+burger-cuda:
+   update
+   bound_v
+   bound_h
+   core
+bwt-cuda:
+   reconstruct_sequence
+   bitonic_sort_step
+   generate_table
+car-cuda:
+   car
+cbsfil-cuda:
+   toCoef2DY
+   toCoef2DX
+cc-cuda:
+   flatten
+   compute3
+   compute2
+   compute1
+   init
+ccs-cuda:
+   compute_bicluster
+ccsd-trpdrv-cuda:
+   ccsd_kernel
+ced-cuda:
+   hyst_kernel
+   non_max_supp_kernel
+   sobel_kernel
+   gaussian_kernel
+cfd-cuda:
+   time_step
+   compute_flux
+   compute_step_factor
+   initialize_variables
+   initialize_buffer
+chacha20-cuda:
+   test_keystreams
+channelShuffle-cuda:
+   ChannelShuffleNCHWKernel
+   ChannelShuffleNCHWKernel
+   ChannelShuffleNHWCKernel
+   ChannelShuffleNHWCKernel
+   ChannelShuffleNHWCKernel
+channelSum-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   ChannelSumNHWC
+   ChannelSumNCHW
+   ChannelSumNCHW
+   ChannelSumNCHW
+   ChannelSumNCHW
+che-cuda:
+   Swap
+   cahnHilliard
+   localFreeEnergyFunctional
+   chemicalPotential
+chemv-cuda:
+   kernel1
+   kernel0
+chi2-cuda:
+   kernel
+clenergy-cuda:
+   cenergy
+clink-cuda:
+   lstm_inference
+clock-cuda:
+   timedReduction
+cm-cuda:
+   computeRandomConnectionScores
+   countAboveThresholdHelper
+   computeDotProductHelper
+cmembench-cuda:
+   benchmark_constant
+   benchmark_constant
+   benchmark_constant
+cmp-cuda:
+   redux_semblances
+   compute_semblances
+   init_half
+   init_c
+cobahh-cuda:
+   cobahh
+collision-cuda:
+   checkDuplicateMask
+   checkDuplicates
+colorwheel-cuda:
+   color
+columnarSolver-cuda:
+   decode
+   setupKernel
+complex-cuda:
+   ref_complex_double
+   ref_complex_float
+   complex_double
+   complex_float
+compute-score-cuda:
+   reduction
+   compute
+concat-cuda:
+   concat
+concurrentKernels-cuda:
+   sum
+   clock_block
+contract-cuda:
+   contraction
+   contraction
+conversion-cuda:
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+   cvt
+convolution1D-cuda:
+   conv1d_tiled_caching
+   conv1d_tiled
+   conv1d
+   conv1d_tiled_caching
+   conv1d_tiled
+   conv1d
+   conv1d_tiled_caching
+   conv1d_tiled
+   conv1d
+convolution3D-cuda:
+   conv3d_s3
+   conv3d_s2
+   conv3d_s1
+convolutionSeparable-cuda:
+   conv_cols
+   conv_rows
+cooling-cuda:
+   cool_kernel
+coordinates-cuda:
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::EmptyKernel
+crc64-cuda:
+   crc64_kernel
+cross-cuda:
+   cross3_kernel
+   cross2_kernel
+   cross_kernel
+   cross3_kernel
+   cross2_kernel
+   cross_kernel
+crossEntropy-cuda:
+   loss_bwd
+   loss_bwd
+   loss_bwd
+crs-cuda:
+   gcrs_m_4_w_8_coding_dotprod
+   gcrs_m_4_w_7_coding_dotprod
+   gcrs_m_4_w_6_coding_dotprod
+   gcrs_m_4_w_5_coding_dotprod
+   gcrs_m_4_w_4_coding_dotprod
+   gcrs_m_3_w_8_coding_dotprod
+   gcrs_m_3_w_7_coding_dotprod
+   gcrs_m_3_w_6_coding_dotprod
+   gcrs_m_3_w_5_coding_dotprod
+   gcrs_m_3_w_4_coding_dotprod
+   gcrs_m_2_w_8_coding_dotprod
+   gcrs_m_2_w_7_coding_dotprod
+   gcrs_m_2_w_6_coding_dotprod
+   gcrs_m_2_w_5_coding_dotprod
+   gcrs_m_2_w_4_coding_dotprod
+   gcrs_m_1_w_8_coding_dotprod
+   gcrs_m_1_w_7_coding_dotprod
+   gcrs_m_1_w_6_coding_dotprod
+   gcrs_m_1_w_5_coding_dotprod
+   gcrs_m_1_w_4_coding_dotprod
+d2q9-bgk-cuda:
+   d2q9_bgk
+d3q19-bgk-cuda:
+   collide_and_stream_g
+   init_velocity_g
+   find_wall
+   make_flag
+damage-cuda:
+   damage_of_node
+dct8x8-cuda:
+   IDCT8x8_kernel
+   DCT8x8_kernel
+ddbp-cuda:
+   division_kernel
+   differentiation_kernel
+   bilinear_interpolation_kernel
+   img_integration_kernel
+   mapDet2Slice_kernel
+   rot_detector_kernel
+   map_boudaries_kernel
+   pad_projections_kernel
+debayer-cuda:
+   malvar_he_cutler_demosaic
+degrid-cuda:
+   degrid_kernel
+dense-embedding-cuda:
+   dense_esuhm2
+   dense_esuhm
+depixel-cuda:
+   eliminate_crosses
+   check_connect
+deredundancy-cuda:
+   kernel_align
+   kernel_filter
+   kernel_magic
+   kernel_cleanTable
+   kernel_makeTable
+   kernel_updateRepresentative
+   kernel_mergeIndex
+   kernel_createCutoff
+   kernel_createIndex7
+   kernel_createIndex6
+   kernel_createIndex5
+   kernel_createIndex4
+   kernel_compressData
+   kernel_baseToNumber
+determinant-cuda:
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+diamond-cuda:
+   maskSequences
+dispatch-cuda:
+   EmptyKernel
+distort-cuda:
+   barrel_distort
+divergence-cuda:
+   div_kernel
+doh-cuda:
+   hessian_matrix_det
+dpid-cuda:
+   kernelDownsampling
+   kernelGuidance
+dropout-cuda:
+   fused_dropout_kernel_vec
+   fused_dropout_kernel_vec
+   fused_dropout_kernel
+dslash-cuda:
+   dslash
+   make_back
+dwconv-cuda:
+   conv_depthwise2d_forward_kernel
+   conv_depthwise2d_forward_kernel
+   conv_depthwise2d_forward_kernel
+dxtc2-cuda:
+   compress
+easyWave-cuda:
+   kernel4
+   kernel3
+   kernel2
+   kernel
+ecdh-cuda:
+   k_fast
+   k_slow
+egs-cuda:
+   sum_detector_scores_kernel
+   simulation_step_kernel
+eigenvalue-cuda:
+   recalculateEigenIntervals
+   calNumEigenValueInterval
+eikonal-cuda:
+   run_check_neighbor
+   run_reduction
+   run_solver
+entropy-cuda:
+   entropy_opt
+   entropy
+epistasis-cuda:
+   epi
+ert-cuda:
+   block_stride
+   block_stride
+   block_stride
+expdist-cuda:
+   reduce_cross_term
+   distance
+   reduce_cross_term
+   distance
+extend2-cuda:
+   kernel_extend2
+extrema-cuda:
+   relextrema_2D
+   relextrema_2D
+   relextrema_2D
+   relextrema_2D
+   relextrema_1D
+   relextrema_1D
+   relextrema_1D
+   relextrema_1D
+f16atomic-cuda:
+   f16AtomicOnGlobalMem
+   f16AtomicOnGlobalMem
+f16max-cuda:
+   hmax
+   hmax
+f16sp-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   scalarProductKernel_native2_fp32
+   scalarProductKernel_native_fp32
+   scalarProductKernel_intrinsics
+face-cuda:
+   filter_kernel
+fdtd3d-cuda:
+   finite_difference
+feynman-kac-cuda:
+   fk
+fft-cuda:
+   ifft1D_512
+   fft1D_512
+fhd-cuda:
+   cmpfhd
+filter-cuda:
+   filter2
+   filter
+flame-cuda:
+   kernel_generate_points
+   kernel_iterate
+   kernel_initialize
+flip-cuda:
+   flip_kernel
+   flip_kernel
+floydwarshall-cuda:
+   floydWarshallPass
+floydwarshall2-cuda:
+   FWrem_64
+   FWrowcol_64
+   FW0_64
+   init2
+   init1
+fluidSim-cuda:
+   lbm
+fpc-cuda:
+   fpc2_kernel
+   fpc_kernel
+fpdc-cuda:
+   CompressionKernel
+frechet-cuda:
+   distance_norm3
+   distance_norm2
+   distance_norm1
+fresnel-cuda:
+   kernel
+   xFresnel_Auxiliary_Cosine_Integral
+   Fresnel_Sine_Integral
+   xFresnel_Auxiliary_Sine_Integral
+frna-cuda:
+   init_w5_and_w3
+   calc_w5_and_w3
+   calc_wl_coax
+   calc_coaxial
+   calc_WM
+   calc_W
+   calc_V_exterior
+   calc_V_multibranch
+   calc_V_bulge_internal
+   calc_V_hairpin_and_V_stack
+fsm-cuda:
+   MaxKernel
+   FSMKernel
+fwt-cuda:
+   modulateKernel
+   fwtBatch2Kernel
+   fwtBatch1Kernel
+ga-cuda:
+   ga
+gabor-cuda:
+   gabor
+gamma-correction-cuda:
+   gamma_correction
+gaussian-cuda:
+   fan2
+   fan1
+gc-cuda:
+   runSmall
+   runLarge
+   init
+gd-cuda:
+   update
+   compute
+   L2_norm
+ge-spmm-cuda:
+   spmm_test4
+   spmm_test3
+   spmm_test2
+   spmm_test1
+geam-cuda:
+geglu-cuda:
+   geglu_kernel
+   geglu_kernel
+   geglu_kernel
+   geglu_kernel
+   geglu_kernel
+   geglu_kernel
+gels-cuda:
+gelu-cuda:
+   gelu_bias_loop_base
+   gelu_bias_loop
+gemv-cuda:
+   check_int4_quantized_correctness
+   check_int8_quantized_correctness
+   check_correctness
+   gemv_quantized_int4
+   gemv_quantized_int8
+   gemv_fp16
+geodesic-cuda:
+   kernel_distance
+gibbs-cuda:
+   sum_blocks
+   sample_theta
+   setup_kernel
+glu-cuda:
+   glu_kernel
+gmm-cuda:
+   mstep_covariance2
+   mstep_covariance1
+   mstep_N
+   mstep_means
+   estep2
+   estep1
+   seed_clusters_kernel
+   constants_kernel
+goulash-cuda:
+   gate
+gpp-cuda:
+   solver
+graphB+-cuda:
+   incrementCC
+   BellmanFord
+   ccHopCount
+   largestCC
+   ccSize
+   flatten
+   compute1
+   init3
+   initMinus
+   processCycles
+   inTreeUpdate
+   treelabel
+   rootcount
+   generateSpanningTree
+   init2
+   init
+graphExecution-cuda:
+   reduceFinal
+   reduce
+grep-cuda:
+grrt-cuda:
+   task2
+   task1
+gru-cuda:
+   gru_cell_forward
+haccmk-cuda:
+   haccmk_kernel
+hausdorff-cuda:
+   computeDistance
+haversine-cuda:
+   compute_haversine_distance
+hbc-cuda:
+   bc_kernel
+heartwall-cuda:
+   hw
+heat-cuda:
+   solve
+   zero
+   initial_value
+heat2d-cuda:
+   dev_lapl_iter
+hellinger-cuda:
+   hellinger
+henry-cuda:
+   insertions
+hexciton-cuda:
+   final_gpu_kernel
+   comm_manual_aosoa_constants_direct_perm
+   comm_manual_aosoa_constants_direct_prefetch
+   comm_manual_aosoa_constants_direct
+   comm_manual_aosoa_direct
+   comm_manual_aosoa_constants_perm_prefetch
+   comm_manual_aosoa_constants_perm
+   comm_manual_aosoa_constants
+   comm_manual_aosoa
+   comm_aosoa_constants_direct_perm
+   comm_aosoa_constants_direct
+   comm_aosoa_direct
+   comm_aosoa_constants_perm
+   comm_aosoa_constants
+   comm_aosoa
+   comm_aosoa_naive_constants_direct_perm
+   comm_aosoa_naive_constants_direct
+   comm_aosoa_naive_direct
+   comm_aosoa_naive_constants_perm
+   comm_aosoa_naive_constants
+   comm_aosoa_naive
+   comm_refactor_direct_store
+   comm_refactor
+   comm_init
+   comm_empty
+histogram-cuda:
+   histogram_gmem_atomics
+   histogram_smem_atomics
+   histogram_gmem_accum
+   histogram_gmem_atomics
+   histogram_smem_accum
+   histogram_smem_atomics
+   histogram_gmem_accum
+   histogram_gmem_atomics
+   histogram_smem_accum
+   histogram_smem_atomics
+hmm-cuda:
+   viterbi
+hogbom-cuda:
+   k_subtractPSF
+   k_findPeak
+hotspot-cuda:
+   calc_temp
+hotspot3D-cuda:
+   hotspot3d
+hungarian-cuda:
+   min_reduce_kernel2
+   min_reduce_kernel1
+   step_6_add_sub
+   step_5b
+   step_5a
+   step_4
+   step_4_init
+   step_3
+   step_3ini
+   step_2
+   compress_matrix
+   step_1_col_sub
+   step_1_row_sub
+   calc_min_in_cols
+   calc_min_in_rows
+   init
+hwt1d-cuda:
+   dwtHaar1D
+hybridsort-cuda:
+   histogram1024
+   bucketsort
+   bucketprefix
+   bucketcount
+   mergepack
+   mergeSortPass
+   sortElement
+hypterm-cuda:
+   hypterm_3
+   hypterm_2
+   hypterm_1
+idivide-cuda:
+   latency_test
+   latency_test
+   throughput_test
+   throughput_test
+   check
+interleave-cuda:
+   add_kernel_non_interleaved
+   add_kernel_interleaved
+interval-cuda:
+   test_interval_newton
+intrinsics-cast-cuda:
+   cast2_intrinsics
+   cast1_intrinsics
+intrinsics-simd-cuda:
+   simd_intrinsics
+inversek2j-cuda:
+   invkin_kernel
+is-cuda:
+   rank_gpu_kernel_7
+   rank_gpu_kernel_6
+   rank_gpu_kernel_5
+   rank_gpu_kernel_4
+   rank_gpu_kernel_3
+   rank_gpu_kernel_2
+   rank_gpu_kernel_1
+   full_verify_gpu_kernel_3
+   full_verify_gpu_kernel_2
+   full_verify_gpu_kernel_1
+   create_seq_gpu_kernel
+ising-cuda:
+   update_lattice
+   update_lattice
+   init_spins
+iso2dfd-cuda:
+   iso_2dfd_kernel
+jaccard-cuda:
+   jaccard_jw
+   jaccard_is_opt
+   jaccard_row_sum
+   jaccard_jw
+   jaccard_is_opt
+   jaccard_row_sum
+   fill
+   fill
+jacobi-cuda:
+   jacobi_step
+jenkins-hash-cuda:
+   kernel
+kalman-cuda:
+   kalman
+keccaktreehash-cuda:
+   ker_Keccak
+keogh-cuda:
+   lb_keogh
+kernelLaunch-cuda:
+   KernelWithLargeArgs
+   KernelWithMediumArgs
+   KernelWithSmallArgs
+kiss-cuda:
+   kernel
+kmc-cuda:
+kmeans-cuda:
+   find_membership
+   feature_transpose
+knn-cuda:
+   cuParallelSqrt
+   cuInsertionSort
+   cuComputeDistanceGlobal
+kurtosis-cuda:
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+lanczos-cuda:
+   multiply_inplace_kernel
+   saxpy_inplace_kernel
+   dot_product_kernel
+   warp_multiply_kernel
+   multiply_inplace_kernel
+   saxpy_inplace_kernel
+   dot_product_kernel
+   warp_multiply_kernel
+langevin-cuda:
+   k2
+   k1
+   k0
+laplace-cuda:
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   black_kernel
+   red_kernel
+laplace3d-cuda:
+   laplace3d
+lavaMD-cuda:
+   md
+layernorm-cuda:
+   layernorm_forward_kernel2
+   layernorm_forward_kernel1
+layout-cuda:
+   SoAKernel
+   AoSKernel
+lci-cuda:
+   RHS_f
+lda-cuda:
+   EstepKernel
+ldpc-cuda:
+   ldpc_vnp_kernel_last_iter
+   ldpc_vnp_kernel_normal
+   ldpc_cnp_kernel
+   ldpc_cnp_kernel_1st_iter
+lebesgue-cuda:
+   kernel
+leukocyte-cuda:
+   kernel_IMGVF
+   kernel_dilated
+   kernel_GICOV
+lfib4-cuda:
+   colsGPU
+   lastEntGPU
+   colYGPU
+   firstColGPU
+libor-cuda:
+   Pathcalc_Portfolio_KernelGPU2
+   Pathcalc_Portfolio_KernelGPU
+lid-driven-cavity-cuda:
+   calculate_v
+   calculate_u
+   calc_residual
+   black_kernel
+   red_kernel
+   set_vert_pres_BCs
+   set_horz_pres_BCs
+   sum_pressure
+   calculate_G
+   calculate_F
+   set_BCs
+lif-cuda:
+   lif
+linearprobing-cuda:
+   k_iterate_hashtable
+   k_hashtable_delete
+   k_hashtable_insert
+log2-cuda:
+   compute_log
+logan-cuda:
+   setUpperDiagonal
+   setLowerDiagonal
+   getUpperDiagonal
+   getLowerDiagonal
+   extendSeedLGappedXDropOneDirectionGlobal
+logic-rewrite-cuda:
+   updateDeviceStats
+   printStatsKernel
+   showDeviceKernel
+   processRwmanOuts
+   processRwmanFanins
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceSelectSweepKernel
+   cub::CUB_200500_860_NS::DeviceSelectSweepKernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanInitKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   insert_batch_no_update_masked_kernel
+   insert_batch_no_update_kernel
+   gatherKeyValues
+   getEntryIndicator
+   retrieve_batch_masked_kernel
+   insert_batch_no_update_masked_kernel
+   processPO
+   parseOutputRes
+   findLevelNodeRanges
+   coverFindingToTable
+   gatherWithFilter
+   getCoverToNodeIdMapping
+   markIsCoverOutput
+   gatherByScannedMask
+   genReadyMask
+   recordReconstructedCovers
+   addBackLocalArrays
+   prepareReconstructArrays
+   sharedNodeDrivenPermute
+   prepareDataToInsert
+   checkCoverTravEnd
+   printMffc
+   printAIG
+   printAIGA
+   cub::CUB_200500_860_NS::EmptyKernel
+   factorFromTruth
+   resynCut
+   Aig::getCutTruthTable
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanInitKernel
+   cub::CUB_200500_860_NS::DeviceSelectSweepKernel
+   cub::CUB_200500_860_NS::DeviceSelectSweepKernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   gatherKeyValues
+   getEntryIndicator
+   unbindAllKeys
+   insertChoiceGraphs
+   getTruthWordNums
+   getReconvCut
+   getReconvNumSaved
+   getMffcCut
+   Table::gatherTableToConsecutive
+   Aig::getCutTruthTableConsecutive
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanInitKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceSelectSweepKernel
+   cub::CUB_200500_860_NS::DeviceSelectSweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceSelectSweepKernel
+   cub::CUB_200500_860_NS::DeviceSelectSweepKernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   gatherKeyValues
+   getEntryIndicator
+   recordMFFC
+   unbindKeysUpdateOldRoots
+   checkInsertion
+   updateInsertedIdsIter
+   insertSubgIter
+   checkSingleVarSubg
+   duplicateHashTableWithoutMFFCs
+   evalFactoredForm
+   getCutTruthRanges
+   setStatus
+   printMffcCut
+   EvaluateNodeWave
+   print
+   Revert
+   Convert
+   printCuts
+   DetachAndAttach
+   ReplaceSubgr
+   BuildHashTable
+   EvaluateNode
+   CutEnumerate
+   Inputs
+   Aig::buildHashTable
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanInitKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   gatherKeyValues
+   getEntryIndicator
+   markDanglingNodesIter
+   poUpdateId
+   poReId
+   unbindKeysReId
+   assignOld2NewConsecutiveIds
+   updateLevelNodesNewIds
+   insertLevelNodes
+   markReadyNodes
+   Aig::getElemTruthTable
+   cub::CUB_200500_860_NS::EmptyKernel
+logprob-cuda:
+   log_probs_kernel
+   accumulate_log_probs
+lombscargle-cuda:
+   lombscargle
+loopback-cuda:
+   tausworthe_lookback
+lr-cuda:
+   rsquared
+   linear_regression
+lrn-cuda:
+   lrn_bwd_kernel
+   lrn_fwd_kernel
+lud-cuda:
+   lud_internal
+   lud_perimeter
+   lud_diagonal
+ludb-cuda:
+lulesh-cuda:
+   applyMaterialPropertiesForElems
+   calcMonotonicQForElems
+   calcMonotonicQGradientsForElems
+   calcStrainRates
+   calcKinematicsForElems
+   calcPositionForNodes
+   calcVelocityForNodes
+   applyAccelerationBoundaryConditionsForNodes
+   accelerationForNode
+   collect_final_force
+   fb
+   hgc
+   acc_final_force
+   integrateStress
+   fill_sig
+lzss-cuda:
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanInitKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   decompressKernel
+   compressKernelIII
+   compressKernelI
+mallocFree-cuda:
+mandelbrot-cuda:
+   mandel
+marchingCubes-cuda:
+   generatingTriangles
+   compactLv2
+   computeMinMaxLv2
+   compactLv1
+   computeMinMaxLv1
+mask-cuda:
+   lowerDiagMaskKernel
+   upperDiagMaskKernel
+   lowerMaskKernel
+   upperMaskKernel
+   windowMaskKernel
+   sequenceMaskKernel
+match-cuda:
+   Match10
+   Match9
+   Match8
+   Match7
+   Match6
+   Match5
+   Match4
+   Match3
+   Match2
+   Match1
+matern-cuda:
+   matern_kernel
+matrix-rotate-cuda:
+   rotate_matrix_parallel
+matrixT-cuda:
+   transposeCoarseGrained
+   transposeFineGrained
+   transposeDiagonal
+   transposeNoBankConflicts
+   transposeCoalesced
+   transposeNaive
+   copySharedMem
+   copy
+maxFlops-cuda:
+   MulMAdd8
+   MulMAdd4
+   MulMAdd2
+   MulMAdd1
+   MAdd8
+   MAdd4
+   MAdd2
+   MAdd1
+   Mul8
+   Mul4
+   Mul2
+   Mul1
+   Add8
+   Add4
+   Add2
+   Add1
+   MulMAdd8
+   MulMAdd4
+   MulMAdd2
+   MulMAdd1
+   MAdd8
+   MAdd4
+   MAdd2
+   MAdd1
+   Mul8
+   Mul4
+   Mul2
+   Mul1
+   Add8
+   Add4
+   Add2
+   Add1
+maxpool3d-cuda:
+   maxpool3d
+mcmd-cuda:
+   calculateForceKernel
+mcpr-cuda:
+   compute_probs_unitStrides_sharedMem
+   compute_probs_unitStrides
+   compute_probs
+md-cuda:
+   md
+md5hash-cuda:
+   md5hash_kernel
+mdh-cuda:
+   mdh3
+   mdh2
+   mdh
+meanshift-cuda:
+   mean_shift::gpu::mean_shift_tiling
+   mean_shift::gpu::mean_shift
+medianfilter-cuda:
+   ckMedian
+memcpy-cuda:
+memtest-cuda:
+   kernel5_check
+   kernel5_move
+   kernel5_init
+   kernel_read
+   kernel_read_write
+   kernel_write
+   kernel1_read
+   kernel1_write
+   kernel0_read
+   kernel0_write
+merge-cuda:
+   mergeSinglePath
+   workloadDiagonals
+   mergeSinglePath
+   workloadDiagonals
+   mergeSinglePath
+   workloadDiagonals
+   mergeSinglePath
+   workloadDiagonals
+merkle-cuda:
+   MerklizeRescuePrimeApproach1Phase1
+   MerklizeRescuePrimeApproach1Phase0
+   apply_permutation_round
+   merge
+   ff_p_add
+metropolis-cuda:
+   kernel_redenergy
+   kernel_reset
+   kernel_reset
+   kernel_reset_random_gpupcg
+   kernel_metropolis
+   kernel_gpupcg_setup
+michalewicz-cuda:
+   eval
+minimod-cuda:
+   kernel_add_source_kernel
+   target_pml_3d_kernel
+   target_inner_3d_kernel
+minisweep-cuda:
+   wavefronts
+   init_faceyz
+   init_facexz
+   init_facexy
+minkowski-cuda:
+   minkowski
+minmax-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+mis-cuda:
+   init
+   findmins
+mixbench-cuda:
+   benchmark_func
+mmcsf-cuda:
+   mttkrp_MIHCSR_kernel_all_atomic_fbrLvlPar_4D
+   mttkrp_MIHCSR_kernel_all_atomic_fbrLvlPar
+   mttkrp_MIHCSR_kernel_fbr_atomic_fbrLvlPar_4D
+   mttkrp_MIHCSR_kernel_fbr_atomic_fbrLvlPar
+   mttkrp_MIHCSR_kernel_fbrS_atomic_fbrLvlPar_4D
+   mttkrp_MIHCSR_kernel_slc_atomic_fbrLvlPar_4D
+   mttkrp_MIHCSR_kernel_slc_atomic_fbrLvlPar
+mnist-cuda:
+   bp_bias_c1
+   bp_weight_c1
+   bp_preact_c1
+   bp_output_c1
+   bp_bias_s1
+   bp_weight_s1
+   bp_preact_s1
+   bp_output_s1
+   bp_bias_f
+   bp_weight_f
+   fp_bias_f
+   fp_preact_f
+   fp_bias_s1
+   fp_preact_s1
+   fp_bias_c1
+   fp_preact_c1
+   apply_grad
+   makeError
+   apply_step_function
+moe-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   moeTopK
+   moeSoftmax
+morphology-cuda:
+   vhgw_vert
+   vhgw_horiz
+   vhgw_vert
+   vhgw_horiz
+mpc-cuda:
+   MPCdecompress
+   MPCcompress
+mr-cuda:
+   mr32_eff
+   mr32_sf
+mrc-cuda:
+   MRCGradient2
+   MRCGradient
+mrg32k3a-cuda:
+mriQ-cuda:
+   ComputeQ_GPU
+   ComputePhiMag_GPU
+mt-cuda:
+   mt
+   boxmuller
+mtf-cuda:
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::EmptyKernel
+multimaterial-cuda:
+   ccc_loop3
+   ccc_loop2_2
+   ccc_loop2
+   ccc_loop1_2
+   ccc_loop1
+multinomial-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   sampleMultinomialOnce
+murmurhash3-cuda:
+   MurmurHash3_x64_128_kernel
+myocyte-cuda:
+   kernel
+nbnxm-cuda:
+   nbnxmKernelTest
+nbody-cuda:
+   accumulate_energy
+   update_particles
+   accelerate_particles
+ne-cuda:
+   ne
+nlll-cuda:
+   nll_loss_forward_reduce2d_kernel
+   nll_loss_forward_reduce2d_kernel
+   nll_loss_forward_reduce2d_kernel
+   nll_loss_forward_reduce2d_kernel
+   nll_loss_forward_reduce2d_kernel
+   nll_loss_forward_reduce2d_kernel
+   nll_loss_forward_reduce2d_kernel
+   nll_loss_forward_reduce2d_kernel
+   nll_loss_forward_reduce2d_kernel
+   nll_loss_forward_reduce2d_kernel
+nms-cuda:
+   reduce_nms_bitmap
+   generate_nms_bitmap
+nn-cuda:
+   nn
+nonzero-cuda:
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   write_indices
+norm2-cuda:
+nosync-cuda:
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::DeviceScanInitKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+nqueen-cuda:
+   BP_queens_root_dfs
+ntt-cuda:
+   intt_3_64k_modcrt
+nw-cuda:
+   kernel2
+   kernel1
+openmp-cuda:
+   addConstant
+opticalFlow-cuda:
+   AddKernel
+   JacobiIteration
+   ComputeDerivativesKernel
+   WarpingKernel
+   UpscaleKernel
+   DownscaleKernel
+overlap-cuda:
+   incKernel
+overlay-cuda:
+   DetectionOverlayBox
+p2p-cuda:
+   SimpleKernel
+p4-cuda:
+   postprocess
+pad-cuda:
+   Padding_kernel
+page-rank-cuda:
+   reduce
+   map
+particle-diffusion-cuda:
+   Simulation
+particlefilter-cuda:
+   kernel_sum
+   kernel_normalize_weights
+   kernel_likelihood
+   kernel_find_index
+particles-cuda:
+   bitonicMergeLocal
+   bitonicMergeGlobal
+   bitonicSortLocal1
+   bitonicSortLocal
+   collideK
+   findCellBoundsAndReorderK
+   memSetK
+   calcHashK
+   integrateSystemK
+pathfinder-cuda:
+   pathfinder
+pcc-cuda:
+   ker2
+   ker
+perlin-cuda:
+   perlin
+permutate-cuda:
+   binary_statistical_tests_kernel
+   binary_shuffling_kernel
+   statistical_tests_kernel
+   shuffling_kernel
+permute-cuda:
+   permute_kernel
+perplexity-cuda:
+   sigmas_kernel
+phmm-cuda:
+   pair_HMM_forward
+pitch-cuda:
+   parallelSimple3DAccess
+   parallelPitched3DAccess
+   parallelSimple2DAccess
+   parallelPitched2DAccess
+pnpoly-cuda:
+   pnpoly_opt
+   pnpoly_opt
+   pnpoly_opt
+   pnpoly_opt
+   pnpoly_opt
+   pnpoly_opt
+   pnpoly_opt
+   pnpoly_base
+pns-cuda:
+   PetrinetKernel
+pointwise-cuda:
+   init
+   elementwise
+pool-cuda:
+   KernelPool2DGrad
+popcount-cuda:
+   pc6
+   pc5
+   pc4
+   pc3
+   pc2
+   pc1
+prefetch-cuda:
+   add
+present-cuda:
+   present
+prna-cuda:
+   calc_w5_and_w3
+   init_w5_and_w3
+   calc_x
+   calc_z
+   calc_xl
+   calc_wl
+   calc_coaxial
+   calc_internal
+   calc_hairpin_stack_exterior_multibranch
+projectile-cuda:
+   CalculateRange
+pso-cuda:
+   kernelUpdatePBest
+   kernelUpdateParticle
+qem-cuda:
+   QuarticSolver
+   QRdel
+qkv-cuda:
+   matmul_forward_kernel4
+   add_bias
+   matmul_forward_kernel1
+qrg-cuda:
+   icnd
+   qrng
+qtclustering-cuda:
+   QTC_device
+   trim_ungrouped_pnts_indr_array
+   update_clustered_pnts_mask
+   compute_degrees
+   reduce_card_device
+quantAQLM-cuda:
+   Code1x16MatVec
+quantBnB-cuda:
+   kQuantize
+quantVLLM-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   dynamic_scaled_int8_azp_quant_kernel
+   dynamic_scaled_int8_quant_kernel
+   static_scaled_int8_azp_quant_kernel
+   static_scaled_int8_quant_kernel
+   dynamic_scaled_int8_azp_quant_kernel
+   dynamic_scaled_int8_quant_kernel
+   static_scaled_int8_azp_quant_kernel
+   static_scaled_int8_quant_kernel
+   dynamic_scaled_int8_azp_quant_kernel
+   dynamic_scaled_int8_quant_kernel
+   static_scaled_int8_azp_quant_kernel
+   static_scaled_int8_quant_kernel
+quicksort-cuda:
+   lqsort_kernel
+   gqsort_kernel
+   lqsort_kernel
+   gqsort_kernel
+   lqsort_kernel
+   gqsort_kernel
+radixsort-cuda:
+   reorderDataKeysOnlyK
+   findRadixOffsetsK
+   radixSortBlocksKeysK
+   uniformUpdateK
+   scanExclusiveLocal2K
+   scanExclusiveLocal1K
+radixsort2-cuda:
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+rainflow-cuda:
+   rainflow_count
+randomAccess-cuda:
+   update
+   initTable
+rayleighBenardConvection-cuda:
+   Updatedt
+   AddX
+   AddOne
+   SubOne
+   ElemMultNu
+   ElemMultT
+   ElemMultOmega
+reaction-cuda:
+   update
+   construct_laplacian
+   derivative_z2_zeroflux
+   derivative_z2_pbc
+   derivative_y2_zeroflux
+   derivative_y2_pbc
+   derivative_x2_zeroflux
+   derivative_x2_pbc
+   reaction_gray_scott
+recursiveGaussian-cuda:
+   RecursiveRGBA
+   SimpleRecursiveRGBA
+   Transpose
+relu-cuda:
+   Relu_impl2
+   Relu_impl1
+   ReluGrad_impl2
+   ReluGrad_impl1
+remap-cuda:
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   remap_kernel
+resize-cuda:
+   resize
+   resize_bilinear
+   resize
+   resize_bilinear
+   resize
+   resize_bilinear
+resnet-kernels-cuda:
+   kernel_256_OuterProduct_256
+   kernel_256_winograd_AtIA
+   kernel_256_winograd_BtdB
+   kernel_128_OuterProduct_128
+   kernel_128_winograd_AtIA
+   kernel_128_winograd_BtdB
+   kernel_256_one_1024
+   kernel_1024_one_256
+   kernel_128_one_512
+   kernel_512_one_128
+reverse-cuda:
+   reverse
+reverse2D-cuda:
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+   reverseKernel
+rfs-cuda:
+   sumArrays
+   sumArray
+ring-cuda:
+rle-cuda:
+   cub::CUB_200500_860_NS::DeviceCompactInitKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+rng-wallace-cuda:
+   rng_wallace
+rodrigues-cuda:
+   rotate2
+   rotate
+romberg-cuda:
+   romberg
+rotary-cuda:
+   unrolled_elementwise_kernel_for_multi_outputs
+rsbench-cuda:
+   lookup
+rsc-cuda:
+   RANSAC_kernel_block
+rsmt-cuda:
+   smallNetKernel
+   largeNetKernel
+rtm8-cuda:
+   rtm8
+rushlarsen-cuda:
+   k_forward_rush_larsen
+s3d-cuda:
+   rdwdot10_kernel
+   rdwdot9_kernel
+   rdwdot8_kernel
+   rdwdot7_kernel
+   rdwdot6_kernel
+   rdwdot3_kernel
+   rdwdot2_kernel
+   rdwdot_kernel
+   qssa2_kernel
+   qssab_kernel
+   qssa_kernel
+   ratx4_kernel
+   ratx2_kernel
+   ratxb_kernel
+   ratx_kernel
+   ratt10_kernel
+   ratt9_kernel
+   ratt8_kernel
+   ratt7_kernel
+   ratt6_kernel
+   ratt5_kernel
+   ratt4_kernel
+   ratt3_kernel
+   ratt2_kernel
+   gr_base
+   rdsmh_kernel
+   ratt_kernel
+   rdwdot10_kernel
+   rdwdot9_kernel
+   rdwdot8_kernel
+   rdwdot7_kernel
+   rdwdot6_kernel
+   rdwdot3_kernel
+   rdwdot2_kernel
+   rdwdot_kernel
+   qssa2_kernel
+   qssab_kernel
+   qssa_kernel
+   ratx4_kernel
+   ratx2_kernel
+   ratxb_kernel
+   ratx_kernel
+   ratt10_kernel
+   ratt9_kernel
+   ratt8_kernel
+   ratt7_kernel
+   ratt6_kernel
+   ratt5_kernel
+   ratt4_kernel
+   ratt3_kernel
+   ratt2_kernel
+   gr_base
+   rdsmh_kernel
+   ratt_kernel
+s8n-cuda:
+   k_cube_select_four
+   k_cube_select_two
+   k_cube_select
+sa-cuda:
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::DeviceScanInitKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   merge_suffixes
+   Set_S0
+   InitScan2
+   Compute_SA_From_UniqueRank
+   Store_unique_ranks
+   Set_suffix_rank
+   InitScan
+   keybits
+   Init_d_s12
+sampling-cuda:
+   sampled_rows_kernel
+   exact_rows_kernel
+sc-cuda:
+   StreamCompaction
+scan-cuda:
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+   scan_bcao
+   scan
+scan2-cuda:
+   prefixSum
+   ScanLargeArrays
+   blockAddition
+scan3-cuda:
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanKernel
+   cub::CUB_200500_860_NS::DeviceScanInitKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+scatter-cuda:
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+   scatter_kernel
+scel-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   SigmoidCrossEntropyWithLogitsKernel
+score-cuda:
+   findTopK
+sddmm-batch-cuda:
+secp256k1-cuda:
+   secp256k1
+segment-reduce-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+segsort-cuda:
+   kern_copy
+   kern_block_merge
+   kern_block_sort
+   gen_bk512_tc4_r1025_r2048_orig
+   gen_bk256_tc4_r513_r1024_orig
+   gen_bk128_tc4_r257_r512_orig
+   gen_bk256_wp32_tc8_r129_r256_strd
+   gen_bk256_wp8_tc16_r65_r128_strd
+   gen_bk128_wp16_tc4_r33_r64_strd
+   gen_bk128_wp8_tc4_r17_r32_strd
+   gen_bk128_wp4_tc4_r9_r16_strd
+   gen_bk128_wp2_tc4_r5_r8_orig
+   gen_bk128_wp2_tc2_r3_r4_orig
+   gen_bk256_wp2_tc1_r2_r2_orig
+   gen_copy
+   kern_copy
+   kern_block_merge
+   kern_block_sort
+   gen_bk512_tc4_r1025_r2048_orig
+   gen_bk256_tc4_r513_r1024_orig
+   gen_bk128_tc4_r257_r512_orig
+   gen_bk256_wp32_tc8_r129_r256_strd
+   gen_bk256_wp8_tc16_r65_r128_strd
+   gen_bk128_wp16_tc4_r33_r64_strd
+   gen_bk128_wp8_tc4_r17_r32_strd
+   gen_bk128_wp4_tc4_r9_r16_strd
+   gen_bk128_wp2_tc4_r5_r8_orig
+   gen_bk128_wp2_tc2_r3_r4_orig
+   gen_bk256_wp2_tc1_r2_r2_orig
+   gen_copy
+   bb_bin_group
+   bb_bin_histo
+sheath-cuda:
+   rewindParticle
+   pushParticle
+   scatterParticle
+shmembench-cuda:
+   benchmark_shmem
+shuffle-cuda:
+   transpose_shfl
+   bcast_shfl_xor_sg32
+   bcast_shfl_sg32
+   bcast_shfl_xor_sg16
+   bcast_shfl_sg16
+   bcast_shfl_xor_sg8
+   bcast_shfl_sg8
+simpleMultiDevice-cuda:
+   reduceKernel
+simpleSpmv-cuda:
+   vector_mv_csr
+   vector_mv_csr
+   vector_mv_csr
+   vector_mv_csr
+   vector_mv_csr
+   mv_dense
+   mv_csr
+simplemoc-cuda:
+   att
+slit-cuda:
+snake-cuda:
+   sneaky_snake
+sobel-cuda:
+   sobel_filter
+sobol-cuda:
+   sobolGPU_kernel
+softmax-cuda:
+   softMax2
+   softMax
+softmax-fused-cuda:
+   scaled_masked_softmax_warp_forward
+   scaled_masked_softmax_warp_forward
+   scaled_masked_softmax_warp_forward
+   scaled_masked_softmax_warp_forward
+   scaled_masked_softmax_warp_forward
+   scaled_masked_softmax_warp_forward
+   scaled_masked_softmax_warp_forward
+   scaled_masked_softmax_warp_forward
+   scaled_masked_softmax_warp_forward
+   scaled_masked_softmax_warp_forward
+   scaled_masked_softmax_warp_forward
+softmax-online-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   softmax_forward_baseline_kernel
+   softmax_forward_online_kernel3
+   softmax_forward_online_kernel2
+   softmax_forward_online_kernel
+sort-cuda:
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   bottom_scan
+   top_scan
+   reduce
+sortKV-cuda:
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortOnesweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortExclusiveSumKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortHistogramKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortDownsweepKernel
+   cub::CUB_200500_860_NS::RadixSortScanBinsKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortUpsweepKernel
+   cub::CUB_200500_860_NS::DeviceRadixSortSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+sosfil-cuda:
+   sosfilt
+   sosfilt
+spaxpby-cuda:
+spd2s-cuda:
+spgeam-cuda:
+spgemm-cuda:
+sph-cuda:
+   updatePositions
+   updateAccelerationsBP
+   updateAccelerationsFP
+   updatePressures
+split-cuda:
+   radixSortBlocksKeysK
+spm-cuda:
+   spm
+spmm-cuda:
+spmv-cuda:
+   mv_dense
+spnnz-cuda:
+sps2d-cuda:
+spsm-cuda:
+spsort-cuda:
+sptrsv-cuda:
+   sptrsv_mix
+srad-cuda:
+   compress
+   srad2
+   srad
+   reduce
+   prepare
+   extract
+ss-cuda:
+   StringSearchLoadBalance
+   StringSearchNaive
+ssim-cuda:
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   compute_ssim
+sss-cuda:
+sssp-cuda:
+   SSSP_gpu
+stddev-cuda:
+   sampleKernel
+   sopKernel
+stencil1d-cuda:
+   stencil_1d
+stencil3d-cuda:
+   stencil3d
+streamCreateCopyDestroy-cuda:
+streamOrderedAllocation-cuda:
+   vectorAddGPU
+streamPriority-cuda:
+   memcpy_kernel
+streamUM-cuda:
+streamcluster-cuda:
+   compute_cost
+su3-cuda:
+   k_mat_nn
+surfel-cuda:
+   surfel_render
+   surfel_render
+svd3x3-cuda:
+   svd3_SOA
+sw4ck-cuda:
+   kernel5
+   kernel4
+   kernel3
+   kernel2
+   kernel1
+swish-cuda:
+   SwishGradientKernel
+   SwishKernel
+tensorAccessor-cuda:
+   raw_accessor_kernel
+   tensor_packed_accessor_kernel
+tensorT-cuda:
+   tensor_transpose
+thomas-cuda:
+   cuThomasBatch
+threadfence-cuda:
+   sum
+tissue-cuda:
+   tissue
+tonemapping-cuda:
+   toneMapping
+tpacf-cuda:
+   mergeKernel
+   histoKernel
+   ACFKernel
+   ACFKernelSymm
+tqs-cuda:
+   TaskQueue_gpu
+triad-cuda:
+   triad
+tridiagonal-cuda:
+   transpose
+   sweep_small_systems_global_vec4_kernel
+   sweep_small_systems_global_kernel
+   sweep_small_systems_local_kernel
+   cyclic_branch_free_kernel
+   cyclic_small_systems_kernel
+   pcr_branch_free_kernel
+   pcr_small_systems_kernel
+tsa-cuda:
+   kernel
+   kernel
+tsne-cuda:
+   cub::CUB_200500_860_NS::EmptyKernel
+   IntegrationKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   iDFT2D2gpu
+   iDFT2D1gpu
+   DFT2D2gpu
+   DFT2D1gpu
+   compute_upper_and_lower_bounds
+   compute_kernel_tilde
+   compute_potential_indices
+   compute_interpolated_indices
+   interpolate_device
+   compute_point_box_idx
+   copy_from_fft_output
+   copy_to_fft_input
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   compute_chargesQij_kernel
+   compute_repulsive_forces_kernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   reduce_sum_kernel
+   ComputePijxQijKernelV3
+   cub::CUB_200500_860_NS::EmptyKernel
+   PostprocessNeighborIndicesKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   syv2k
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   PerplexitySearchKernel
+   NegEntropyKernel
+   RowSumKernel
+   ComputePijKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::detail::for_each::static_kernel
+   cub::CUB_200500_860_NS::EmptyKernel
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   thrust::THRUST_200500_860_NS::cuda_cub::core::_kernel_agent
+   tsne::utils::BroadcastColumnVector
+   tsne::utils::BroadcastColumnVector
+   tsne::utils::BroadcastColumnVector
+   cub::CUB_200500_860_NS::EmptyKernel
+tsp-cuda:
+   TwoOpt
+unfold-cuda:
+   unfold_backward_elementwise_kernel
+urng-cuda:
+   noise_uniform
+vanGenuchten-cuda:
+   vanGenuchten
+vmc-cuda:
+   propagate
+   initialize
+   zero_stats
+   initran
+   SumWithinBlocks
+vol2col-cuda:
+   col2vol_kernel
+   vol2col_kernel
+vote-cuda:
+   VoteAnyKernel3
+   VoteAllKernel2
+   VoteAnyKernel1
+voxelization-cuda:
+   featureExtractionKernel
+   voxelizationKernel
+   buildHashKernel
+warpexchange-cuda:
+   k
+warpsort-cuda:
+   facebook::cuda::sortDevice
+   facebook::cuda::sortDevice
+wedford-cuda:
+   welford_kernel
+winograd-cuda:
+   winograd_conv2d
+wlcpow-cuda:
+   bond_wlcpowallvisc
+wmma-cuda:
+   gemm
+word2vec-cuda:
+   device_cbow
+   device_memset
+wordcount-cuda:
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::DeviceReduceSingleTileKernel
+   cub::CUB_200500_860_NS::EmptyKernel
+wsm5-cuda:
+   wsm
+wyllie-cuda:
+   wyllie
+xsbench-cuda:
+   lookup
+zerocopy-cuda:
+   vectorAddGPU
+zeropoint-cuda:
+   zero_point
+zmddft-cuda:
+   ker_zmddft_fwd_256x256x256_cu2
+   ker_zmddft_fwd_256x256x256_cu1
+   ker_zmddft_fwd_256x256x256_cu0
+zoom-cuda:
+   zoom_out_edge_pad
+   zoom_out_kernel
+   zoom_in_kernel

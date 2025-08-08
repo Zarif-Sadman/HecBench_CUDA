@@ -1,0 +1,1 @@
+nvcc  -std=c++14 -Xcompiler -Wall -arch=sm_89 -O3 main.o Option.o OptionParser.o Timer.o triad.o -o triad 

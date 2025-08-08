@@ -1,0 +1,3 @@
+cd BlasLapack && make -j8 && cd ..
+/bin/sh: 1: cd: can't cd to BlasLapack
+make: *** [Makefile:56: BlasLapack/libBlasLapack.a] Error 2

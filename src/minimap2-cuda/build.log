@@ -1,0 +1,4 @@
+Creating directories
+make[1]: Entering directory '/home/zarif/hec_paper_recreate/ParallelCodeEstimation/src/minimap2-cuda'
+Making symlink: kernel-2d -> build/bin/kernel-2d
+make[1]: Leaving directory '/home/zarif/hec_paper_recreate/ParallelCodeEstimation/src/minimap2-cuda'

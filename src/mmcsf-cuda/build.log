@@ -1,0 +1,8 @@
+nvcc  -I/home/zarif/boost_1_76_0 -std=c++14 -Xcompiler -Wall -arch=sm_89 -O3 -c main.cu -o main.o
+In file included from mttkrp_cpu.h:4,
+                 from main.cu:8:
+util.h:9:10: fatal error: boost/sort/sort.hpp: No such file or directory
+    9 | #include <boost/sort/sort.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:53: main.o] Error 1

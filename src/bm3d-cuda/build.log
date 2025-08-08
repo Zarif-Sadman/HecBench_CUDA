@@ -1,0 +1,10 @@
+nvcc  -std=c++14 -Xcompiler -Wall -arch=sm_89 -O3 -c filtering.cu -o filtering.o
+filtering.cu(16): error: identifier "__shfl_down" is undefined
+      val += __shfl_down(val,offset);
+             ^
+          detected during:
+            instantiation of "T warpReduceSum(T) [with T=uint]" at line 28
+            instantiation of "float blockReduceSum(T *, T, int, int) [with T=uint]" at line 214
+
+1 error detected in the compilation of "filtering.cu".
+make: *** [Makefile:52: filtering.o] Error 1

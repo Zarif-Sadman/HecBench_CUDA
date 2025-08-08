@@ -1,0 +1,7 @@
+nvcc -Idfft -DPENCIL=1 -O3 -DRCB_UNTHREADED_BUILD -DUSE_SERIAL_COSMO  -I/usr/include/openmpi-x86_64/ -DID_64 -DPOSVEL_32 -DGRID_32 -DLONG_INTEGER  -I. -x cu -Idfft -c -o cuda/ForceTreeTest.o ForceTreeTest.cxx
+In file included from ForceTreeTest.cxx:23:
+./Partition.h:68:10: fatal error: mpi.h: No such file or directory
+   68 | #include <mpi.h>
+      |          ^~~~~~~
+compilation terminated.
+make: *** [Makefile:100: cuda/ForceTreeTest.o] Error 1

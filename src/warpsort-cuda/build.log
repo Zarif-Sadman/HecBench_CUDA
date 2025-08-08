@@ -1,0 +1,7 @@
+nvcc  -DWARP_SIZE=32 -DHALF_WARP_SIZE=16 -std=c++14 -I. -Xcompiler -Wall -arch=sm_89 -O3 -c warpsort.cu -o warpsort.o
+In file included from warpsort.cu:10:
+cuda/RegisterUtils.cuh:9:10: fatal error: boost/preprocessor/repetition/repeat.hpp: No such file or directory
+    9 | #include <boost/preprocessor/repetition/repeat.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:63: warpsort.o] Error 1

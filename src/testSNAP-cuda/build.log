@@ -1,0 +1,6 @@
+nvcc  -std=c++14 -Xcompiler -Wall -I. -I../testSNAP-omp -DREFDATA_TWOJ=14  -arch=sm_89 -O3 -c main.cu -o main.o
+main.cu:28:10: fatal error: refdata_2J14_W.h: No such file or directory
+   28 | #include "refdata_2J14_W.h"
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:52: main.o] Error 1

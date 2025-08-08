@@ -1,0 +1,43 @@
+/home/zarif/hec_paper_recreate/ParallelCodeEstimation/build/tridiagonal-cuda Starting...
+
+Using CTA of size 256 for Sweep
+
+  Num_systems = 524288, system_size = 128
+
+----- CPU  solvers -----
+  CPU Time =    1.03186 s
+  Throughput =  508.0980 systems/sec
+
+----- optimized GPU solvers -----
+
+ pcr_small_systems_kernel
+  looping 100 times..
+Tridiagonal-pcrsmall-base, Throughput = 151038.5598 Systems/s, Time = 0.00347 s, Size = 524288 Systems
+  err = 0.8575
+
+ pcr_branch_free_kernel
+  looping 100 times..
+Tridiagonal-pcrsmall-optimized, Throughput = 163493.1139 Systems/s, Time = 0.00321 s, Size = 524288 Systems
+  err = 0.8575
+
+ cyclic_small_systems_kernel
+  looping 100 times..
+Tridiagonal-cyclicsmall-base, Throughput = 171544.9929 Systems/s, Time = 0.00306 s, Size = 524288 Systems
+  err = 1.1554
+
+ cyclic_branch_free_kernel
+  looping 100 times..
+Tridiagonal-cyclicsmall-optimized, Throughput = 171579.2581 Systems/s, Time = 0.00306 s, Size = 524288 Systems
+  err = 1.1554
+
+sweep_small_systems_global_kernel
+  looping 100 times..
+Tridiagonal-sweepsmall-noreorder, Throughput = 44527.4131 Systems/s, Time = 0.01177 s, Size = 524288 Systems
+  err = 0.8659
+
+sweep_data_reorder_kernel
+sweep_small_systems_global_kernel
+  looping 100 times..
+Tridiagonal-sweepsmall-reorder, Throughput = 42731.6248 Systems/s, Time = 0.01227 s, Size = 524288 Systems
+  err = 0.8659
+

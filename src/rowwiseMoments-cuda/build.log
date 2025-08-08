@@ -1,0 +1,15 @@
+nvcc  -std=c++14 -Xcompiler -Wall -arch=sm_89 -O3 -c main.cu -o main.o
+main.cu(22): error: namespace "thrust" has no member "pair"
+      WelfordOps<T_ACC, T_ACC, int64_t, thrust::pair<T_ACC, T_ACC>>;
+                                                ^
+
+main.cu(22): error: expected a ">"
+      WelfordOps<T_ACC, T_ACC, int64_t, thrust::pair<T_ACC, T_ACC>>;
+                                                    ^
+
+main.cu(22): error: expected a ";"
+      WelfordOps<T_ACC, T_ACC, int64_t, thrust::pair<T_ACC, T_ACC>>;
+                                                                 ^
+
+3 errors detected in the compilation of "main.cu".
+make: *** [Makefile:50: main.o] Error 2

@@ -1,0 +1,8 @@
+g++  -std=c++11 -Wall -fpermissive -DGPU -DBOOST_ALL_NO_LIB -DBOOST_ATOMIC_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -I/opt/nvidia/hpc_sdk/Linux_x86_64/23.9/cuda/include -O3 -c src/gerbil/FastParser.cpp -o FastParser.o
+In file included from src/gerbil/../../include/gerbil/FastParser.h:25,
+                 from src/gerbil/FastParser.cpp:8:
+src/gerbil/../../include/gerbil/SyncQueue.h:31:10: fatal error: boost/thread/thread.hpp: No such file or directory
+   31 | #include <boost/thread/thread.hpp>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Makefile:75: FastParser.o] Error 1
