@@ -1,0 +1,11 @@
+# Large data files
+*.dat
+*.bin
+*.egr
+*.avi
+*.vcd
+*.fna
+*.img
+*.trace.*
+data.txt
+text8
