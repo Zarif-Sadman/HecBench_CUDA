@@ -34,7 +34,7 @@ for dir in *-cuda/; do
     if [ -n "$exe_file" ]; then
       exe_basename="$(basename "$dir")"
       mv -v "$exe_file" "$BUILD_DIR/$exe_basename"
-      echo "✅ SUCCESS: $dir"
+      echo "SUCCESS: $dir"
       SUCCESSFUL_BUILDS+=("$dir")
       echo "$dir" >> "$SUCCESS_FILE"
     else
@@ -45,11 +45,11 @@ for dir in *-cuda/; do
   else
     # Figure out if it was a timeout or just failed build
     if [ $? -eq 124 ]; then
-      echo "❌ FAILED (timed out): $dir"
+      echo "FAILED (timed out): $dir"
       FAILED_BUILDS+=("$dir: timed out")
       echo "$dir : FAILED (timed out)" >> "$FAILED_FILE"
     else
-      echo "❌ FAILED: $dir"
+      echo "FAILED: $dir"
       FAILED_BUILDS+=("$dir: build failed")
       echo "$dir : FAILED (build failed)" >> "$FAILED_FILE"
     fi
