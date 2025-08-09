@@ -5,7 +5,7 @@ from collections import defaultdict
 
 MODEL = "codellama:instruct"
 SHOT_LIST = [2, 4, 8]
-DATASET_SIZE = 120
+DATASET_SIZE = 200
 SPLIT_RATIOS = {"train": 0.6, "val": 0.2, "test": 0.2}
 GLOBAL_SEED = 0
 
